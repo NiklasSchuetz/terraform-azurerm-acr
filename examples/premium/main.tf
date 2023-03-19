@@ -24,9 +24,9 @@ module "acr" {
       tags                    = { "loc" : "west" }
     },
     {
-      location                = "North Europe"
+      location                = "Eastus"
       zone_redundancy_enabled = true
-      tags                    = { "foo" : "bar" }
+      tags                    = { "loc" : "Eastus" }
     },
   ]
 
