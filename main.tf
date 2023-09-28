@@ -21,4 +21,11 @@ resource "azurerm_container_registry" "acr" {
   }
 
   tags = var.tags
+
+  lifecycle {
+    ignore_changes = [
+      # ignore changes on tags, which are enforced via azure policies
+      tags
+    ]
+  }
 }
